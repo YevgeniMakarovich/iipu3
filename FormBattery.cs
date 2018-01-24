@@ -83,7 +83,6 @@ namespace Battery
 
         private void FormBattery_FormClosing(object sender, FormClosingEventArgs e)
         {
-            //batteryWorker.SetTimeout(Convert.ToInt32(numericUpDownBattery.Value));//устанавливаем последнее значение перед выходом
             numericUpDownBattery.Value = batteryWorker.PrevTimeout;
         }
     }
